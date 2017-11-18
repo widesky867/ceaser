@@ -24,11 +24,11 @@ def getMessage():
     return input()
 
 def translate(mode, key, message):
-    if mode[0] == 'e' or '1':
+    if mode[0] == '1':
         print("Encrypt mode.")
-    elif mode [0] == 'd' or '2':
-        print("Dncrypt mode.")
-        key = -key
+    elif mode [0] == '2':
+        print("Decrypt mode.")
+        key -= key
 
     translate = ''
 
